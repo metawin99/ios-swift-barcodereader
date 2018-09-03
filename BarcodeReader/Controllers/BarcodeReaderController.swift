@@ -11,7 +11,7 @@ import UIKit
 
 class BarcodeReaderController: UIViewController {
     // Define metadata object types that might be detected in a picture
-    let metadataObjectTypes: [AVMetadataObject.ObjectType] = [.qr]
+    let metadataObjectTypes: [AVMetadataObject.ObjectType] = [.ean8 , .ean13, .upce]
 
     fileprivate let sessionQueue = DispatchQueue(label: "sessionQueue")
     fileprivate var captureSession: AVCaptureSession?
